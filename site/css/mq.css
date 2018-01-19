@@ -36,7 +36,7 @@ nav ul li{
 }
 
 nav ul li a{
-    background-color: greenyellow;
+    color: greenyellow;
     text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ nav ul li:hover{
 
 .responsive-bar{
     width: 100%;
-    background-color:brown;
+    background-color: rgb(52, 87, 127);
     padding: 10px 30px;
     box-sizing: border-box;
     display: none;
@@ -60,7 +60,7 @@ nav ul li:hover{
 }
 
 .responsive-bar h3 a{
-    color: blueviolet;
+    color: wheat;
     text-decoration: none;
 }
 
@@ -70,7 +70,7 @@ nav ul li:hover{
     color: floralwhite;
     float: right;
     padding: 5px;
-    background: orange;
+    background: hotpink;
     text-transform: uppercase;
     cursor: pointer;
 }
