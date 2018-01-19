@@ -1,14 +1,81 @@
-h1 {
-   color: rgb(14, 16, 127);
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.body{
+    margin: 0;
+    padding 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.nav {
+nav{
+    width: 100%
     background-color: rgb(104, 175, 255);
-    overflow: hidden;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
-.nav a {
+nav h1{
+    margin: 0;
+    padding: 15px 20px;
+    float: left;
+}
+
+nav h1 a{
+    color: hotpink;
+    text-decoration: none;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 30px;
+    transition: .5s;
+}
+
+nav ul li a{
+    background-color: greenyellow;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color: hotpink;
+}
+
+.responsive-bar{
+    width: 100%;
+    background-color:brown;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.responsive-bar h3{
+    margin: 0;
+    padding: 3px 0;
+    color: blueviolet;
+    float: left;
+}
+
+.responsive-bar h3 a{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.responsive-bar h4{
+    margin: 0;
+    padding: 0;
+    color: floralwhite;
+    float: right;
+    padding: 5px;
+    background: orange;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.brand a {
     float: left;
     color: rgb(14, 16, 127);
     text-align: center;
@@ -17,36 +84,36 @@ h1 {
     font-size: 17px;
 }
 
-.box{
-    
+.rep-bar{
+    width: 100%;
+    background: hotpink;
+    padding: 10px 30px;
+    box-sizing: border-box;
 }
 
-.nav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.nav a.active {
-    background-color: rgb(52, 87, 127); 
-    color: white;
-}
-
-p {
-    color: rgb(14, 16, 127);
-    font-family: fantasy;
-    text-align: center;
-}
-
-.box{
-    color: rgb(14, 16, 127);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-}
-
-@media only screen and (min-device-width: 400px) {
-    
-    body {
-        background-color: white; 
+@media only screen and (max-device-width: 400px){
+    nav{
+        display: none;
+        padding: 0;
+    }
+    .responsive-bar{
+        display: block;
+    }
+    nav h1 {
+        display: block;
+        float: none;
+    }
+    nav ul{
+        float: none;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        background-color: hotpink;
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(red, green, blue, alpha);
+    }
+    h1.brand{
+        display: none;
     }
 }

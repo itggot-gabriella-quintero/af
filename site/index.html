@@ -7,15 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-        <h1>NAMNET</h1> 
-        <div class="nav">
-            <a class="active" href="hem">Hem</a>
-            <a href="affärsresor">Affärsresor</a>
-            <a href="kontakta oss">Kontakta oss</a>
-            <a href="#om oss">Om oss</a>
-          </div>
-
-        <p>En hemsida om affärsresor</p>
+    <nav>
+        <h1 class="brand">NAMNET<a href="#"></a></h1> 
+        <ul>
+            <li><a class="active" href="hem">Hem</a></li>
+            <li><a href="affärsresor">Affärsresor</a></li>
+            <li><a href="kontakta oss">Kontakta oss</a></li>
+            <li><a href="#om oss">Om oss</a></li>
+        </ul>
+        <div style="clear: both"></div>
+    </nav>
+    <div class="responsive-bar">
+        <h3 class="brand"><a href="#">NAMNET</a></h3> 
+        <h4 class="menu">Menu</h4>
+        <div style="clear: both"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".menu").click(function(){
+                $("nav").slideToggle(500);
+            })
+        })
+    </script>
         <div class="box">
             <h2>Apply</h2>
                 <form action="">
