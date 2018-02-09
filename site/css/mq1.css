@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    background-image: url("../img/new2.jpg");
+    color: rgb(240, 230, 239);
+}
+
+nav{
+    width: 100%;
+    background-color:rgb(86, 64, 96);
+}
+
+ul{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+ul li:hover{
+    background-color:rgb(147, 120, 188);
+}
+
+ul li a{
+     color: rgb(240, 230, 239);
+     text-decoration: none;
+}
+
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    background: rgb(86, 64, 96);
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 30px;
+    display: none;
+}
+
+button{
+    background-color: rgb(24,28,46);
+    color: rgb(240, 230, 239);
+    height: 39px;
+    width: 100px;
+}
+
+form :hover{
+    
+}
+
+@media (max-width: 768px){
+    .menu_hidden {
+        display: none;
+    }
+    
+    .toggle{
+        display: block;
+    }
+    ul{
+        width: 100%;
+    }
+    ul li{
+        display: block;
+        text-align: center;
+    } 
+    .active{
+        display: block;
+    }
+
+    nav{
+        width: 100%;
+        background-color:rgb(86, 64, 96);
+}
+
+
+

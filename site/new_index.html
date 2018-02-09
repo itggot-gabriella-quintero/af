@@ -3,36 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mq.css">
+    <link rel="stylesheet" href="css/mq1.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
     <title>Document</title>
 </head>
 <body> 
-    <nav class="con">
-        <h1 class="brand">Resiteam<a href="#"></a></h1> 
-            <i class="material-icons" onclick="toggleMenu()">close</i>
-            <ul>
-                <li><a class="active" href="file:///C:/Users/gabriella.quintero/Documents/Aff%C3%A4rsresor%20-%20GSD/Hemsidan/af/site/menu.html">Hem</a></li>
-                <li><a href="affärsresor">Affärsresor</a></li>
-                <li><a href="file:///C:/Users/gabriella.quintero/Documents/Aff%C3%A4rsresor%20-%20GSD/Hemsidan/af/site/menu.html">Kontakta oss</a></li>
-                <li><a href="om oss">Om oss</a></li>
+    <nav>
+        <div class="toggle">
+            <i class="material-icons" onclick="toggleMenu()">menu</i>
+        </div>
+            <ul class="menu menu_hidden">
+                <li><a href="#">Hem</a></li>
+                <li><a href="#">Affärsresor</a></li>
+                <li><a href="#">Kontakta oss</a></li>
+                <li><a href="#">Om oss</a></li>
             </ul>
-        <div style="clear: both"></div>
-    </nav>
-    <div class="responsive-bar">
-        <h3 class="brand"><a href="#">Resiteam</a></h3> 
-        <h4 class="menu">Menu</h4>
-        <div style="clear: both"></div>
-    </div>
-    
-    <script src=""></script>
+    </nav>     
+    <script src="js/menu.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $(".menu").click(function(){
-                $("nav").slideToggle(500);
-            })
-        })
     </script>
     <div class="container">
         <div class="box">
@@ -64,7 +53,7 @@
                 </form>
                 <form>
                 <h6>*Obligatorisk information</h6>
-                <button type="submit" onclick="file:///C:/Users/gabriella.quintero/Documents/Aff%C3%A4rsresor%20-%20GSD/Hemsidan/af/site/index2.html">Skicka</button>
+                <button type="submit">Skicka</button>
                 </form>
             </div>
         </div>
