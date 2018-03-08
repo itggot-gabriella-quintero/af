@@ -4,6 +4,7 @@ body{
     font-family: 'Comfortaa', cursive;
     background-image: url("../img/new2.jpg");
     color: rgb(240, 230, 239);
+
 }
 
 nav{
@@ -32,14 +33,30 @@ ul li a{
      text-decoration: none;
 }
 
+
 .toggle{
-    width: 100%;
-    padding: 10px 20px;
+    width: auto;
+    height: 50px;
+    display: grid;
     background: rgb(86, 64, 96);
     text-align: right;
-    box-sizing: border-box;
     font-size: 30px;
-    display: none;
+}
+
+.toggle i{
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.box form{
+    text-align: center;
+}
+
+
+form input{
+    height: 25px;
+    width: 200px;
+    border-radius: 10px;
 }
 
 button{
@@ -47,13 +64,124 @@ button{
     color: rgb(240, 230, 239);
     height: 39px;
     width: 100px;
+    border-radius: 10px;
 }
 
-form :hover{
-    
+a{
+    text-align: center;
+    color: rgb(240, 230, 239);
 }
 
-@media (max-width: 768px){
+.button2 {
+    display: block;
+    width: 250px;
+    height: 138px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    background-color:rgba(24, 28, 46, 0.53);
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.button2:hover{
+    width: 255px;
+    height: 140px;
+    background-color:rgba(24, 28, 46, 0.73);
+    font-size: 32px;
+    text-align: center;
+}
+
+.fact{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.fact p:hover{
+    color:rgb(147, 120, 188);
+}
+
+.fact2{
+    text-align: center;
+    margin-top: 55px;
+}
+
+.fact2 p:hover{
+    color:rgb(147, 120, 188);
+}
+
+.ar h4{
+    width: 48%;
+    height: 145px;
+    padding: 0;
+    background-image: url(../img/arnew.png);
+    background-size: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.ar h4:hover{
+    width: 50%;
+    height: 147px;
+}
+
+.text h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text h3{
+    margin-top: 50px;
+}
+
+.text p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Det kan vara vilken bild som helst*/
+.text .cute h4{
+    background-image: url(../img/tumblr_o5ihnnJ5Ul1qji3sdo1_500.jpg);
+    width: 50%;
+    height: 155px;
+    padding: 0;
+    background-size: 100%;
+    text-align: right;
+    margin: auto;
+    margin-top: 30px;
+}
+
+footer{
+    display: block;
+    text-align: left;
+    background-color: rgb(86, 64, 96);
+    font-size: 8px;
+    text-align: right;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    margin-top: 70px;
+}
+
+.foot footer{
+    display: block;
+    text-align: left;
+    background-color: rgb(86, 64, 96);
+    font-size: 8px;
+    text-align: right;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    margin-top: 350px;
+
+}
+
+/*Ska vara anpassad till iPhone 6s*/
+@media (max-width: 378px){
     .menu_hidden {
         display: none;
     }
@@ -75,7 +203,18 @@ form :hover{
     nav{
         width: 100%;
         background-color:rgb(86, 64, 96);
+    }
+
+    footer{
+        display: block;
+        text-align: left;
+        background-color: rgb(86, 64, 96);
+        font-size: 10px;
+        text-align: right;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        margin-top: 70px;
+    }
+
 }
-
-
-
